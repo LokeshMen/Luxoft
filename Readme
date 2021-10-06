@@ -1,0 +1,21 @@
+# Steps
+npm install
+npm start
+
+# steps for api's as per documet
+4) a) http://localhost:3000/getUser
+   b) http://localhost:3000/getUser?userId={userId}
+   c)http://localhost:3000/login   body : email and password
+
+      run above api's through postman
+
+5)http://localhost:3000
+  Enter email and password
+  if user role is Employee we wil get 6 page otherwise we will get 7 page
+
+=> If you want add new user from UserInteface http://localhost:3000/addUser
+
+#
+
+
+
