@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-offset-3">
+          <h1>Add a New User</h1>
+          <form method="post">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="form-group">
+                  <label for="userName">User Name: </label>
+                  <input
+                    type="text"
+                    id="userName"
+                    class="form-control"
+                    name="userName"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="product_name">User Email: </label>
+                  <input
+                    type="text"
+                    id="userEmail"
+                    class="form-control"
+                    name="userEmail"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="product_price">Password: </label>
+                  <input
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    name="password"
+                  />
+                </div>
+				<div class="form-group">
+					<label for="product_price">Role: </label>
+					<input
+					  type="text"
+					  id="role"
+					  class="form-control"
+					  name="role"
+					/>
+				  </div>
+                <button type="submit" class="btn btn-success">SignUp</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+	<%if(typeof message == "undefined"){%>
+		<% } else { %>
+			<div style="color: green;max-width: 600px;margin: auto;"><%= message %></div>
+			<%}%>
+  </body>
+</html>
